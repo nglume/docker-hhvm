@@ -12,8 +12,8 @@ fi
 cat /opt/etc/errors.ini >> /etc/hhvm/server.ini
 cat /opt/etc/errors.ini >> /etc/hhvm/php.ini
 
-cat /opt/etc/timezone.ini >> /etc/hhvm/timezone.ini
-cat /opt/etc/timezone.ini >> /etc/hhvm/timezone.ini
+cat /opt/etc/timezone.ini >> /etc/hhvm/server.ini
+cat /opt/etc/timezone.ini >> /etc/hhvm/php.ini
 
 
 exec hhvm --mode server -vServer.Type=fastcgi -vServer.Port=9000
