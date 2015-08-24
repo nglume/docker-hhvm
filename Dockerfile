@@ -9,6 +9,7 @@ RUN apt-get update && apt-get install -y libpq-dev && rm -rf /var/lib/apt/lists/
 
 ADD config/xdebug.ini /opt/etc/xdebug.ini
 ADD config/errors.ini /opt/etc/errors.ini
+ADD config/timezone.ini /opt/etc/timezone.ini
 
 # PHP startup script
 ADD config/php-start.sh /opt/bin/php-start.sh
